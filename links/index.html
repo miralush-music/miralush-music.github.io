@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mira Lush</title>
+<meta name="description" content="그냥 틀어놓기만 해도, 마음이 포근해지는 음악 — Mira Lush">
+<meta property="og:title" content="Mira Lush">
+<meta property="og:description" content="그냥 틀어놓기만 해도, 마음이 포근해지는 음악">
+<meta name="theme-color" content="#2a2238">
+<style>
+  :root {
+    --bg-top: #2a2238;       /* 해 질 녘 남보라 */
+    --bg-bottom: #6b3a2a;    /* 벽난로 갈색 */
+    --cream: #fff4e3;
+    --cream-dim: #f3dcc0;
+    --amber: #f2a541;
+    --orange: #e8743b;
+    --card: rgba(255, 244, 227, 0.94);
+    --card-text: #4a2a1c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    color: var(--cream);
+    background:
+      radial-gradient(circle at 20% 8%, rgba(242, 165, 65, 0.35), transparent 40%),
+      radial-gradient(circle at 85% 30%, rgba(232, 116, 59, 0.25), transparent 45%),
+      linear-gradient(180deg, var(--bg-top) 0%, #4a2d33 55%, var(--bg-bottom) 100%);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 48px 18px 40px;
+  }
+  main { width: 100%; max-width: 440px; }
+  header { text-align: center; margin-bottom: 30px; }
+  .mark {
+    display: block; width: 96px; height: 96px; margin: 0 auto 16px; border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 4px rgba(255, 244, 227, 0.35), 0 10px 30px rgba(232, 116, 59, 0.45);
+  }
+  .icon.x { font-family: "Segoe UI Symbol", "Apple Symbols", system-ui, sans-serif; font-size: 20px; color: #2a2238; }
+  h1 {
+    margin: 0; font-size: 34px; letter-spacing: 0.02em;
+    font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 600;
+  }
+  .intro { margin: 10px 0 0; font-size: 16px; line-height: 1.5; color: var(--cream-dim); word-break: keep-all; }
+  section { margin-top: 26px; }
+  h2 {
+    margin: 0 0 12px 4px; font-size: 14px; font-weight: 700; letter-spacing: 0.08em;
+    color: var(--amber);
+  }
+  .btn {
+    display: flex; align-items: center; gap: 14px;
+    min-height: 58px; padding: 12px 18px; margin-bottom: 10px;
+    border-radius: 16px; text-decoration: none;
+    background: var(--card); color: var(--card-text);
+    font-size: 17px; font-weight: 700;
+    box-shadow: 0 6px 18px rgba(20, 10, 20, 0.25);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(20, 10, 20, 0.35); }
+  .btn:active { transform: translateY(0); }
+  .btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+  .icon {
+    flex: none; width: 34px; height: 34px; border-radius: 10px;
+    display: grid; place-items: center; font-size: 18px;
+    background: linear-gradient(135deg, #ffd48a, var(--orange));
+  }
+  .label { flex: 1; }
+  .arrow { color: var(--orange); font-size: 20px; }
+  .listen .btn { background: linear-gradient(135deg, #fff1d6, #ffe0b8); }
+  footer { margin-top: 34px; text-align: center; font-size: 12px; color: rgba(255, 244, 227, 0.55); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="mark" src="profile.jpg" alt="Mira Lush 프로필 사진" width="96" height="96">
+    <h1>Mira Lush</h1>
+    <p class="intro">그냥 틀어놓기만 해도, 마음이 포근해지는 음악</p>
+  </header>
+
+  <section class="listen" aria-labelledby="listen">
+    <h2 id="listen">🎧 음악 듣기</h2>
+    <a class="btn" href="https://www.youtube.com/@MiraLush" target="_blank" rel="noopener"><span class="icon">▶️</span><span class="label">유튜브</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://open.spotify.com/artist/3vr3Rf11Q99Md1lmzrv5cl" target="_blank" rel="noopener"><span class="icon">🎵</span><span class="label">Spotify</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://music.apple.com/us/artist/mira-lush/1798498330" target="_blank" rel="noopener"><span class="icon">🍎</span><span class="label">Apple Music</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://audiomack.com/hhan00go" target="_blank" rel="noopener"><span class="icon">🎶</span><span class="label">Audiomack</span><span class="arrow">›</span></a>
+  </section>
+
+  <section aria-labelledby="news">
+    <h2 id="news">💌 소식 보기</h2>
+    <a class="btn" href="https://blog.naver.com/miralush_garden" target="_blank" rel="noopener"><span class="icon">📝</span><span class="label">네이버 블로그</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://pf.kakao.com/_NprvX" target="_blank" rel="noopener"><span class="icon">💛</span><span class="label">카카오 채널</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://naver.me/xsZaZLsv" target="_blank" rel="noopener"><span class="icon">🎬</span><span class="label">클립</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://www.instagram.com/MiraLush0" target="_blank" rel="noopener"><span class="icon">📷</span><span class="label">인스타그램</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://www.tiktok.com/@mira.lush" target="_blank" rel="noopener"><span class="icon">🎞️</span><span class="label">틱톡</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://x.com/MiraLush0" target="_blank" rel="noopener"><span class="icon x">𝕏</span><span class="label">X</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://www.threads.net/@miralush0" target="_blank" rel="noopener"><span class="icon">🧵</span><span class="label">Threads</span><span class="arrow">›</span></a>
+    <a class="btn" href="https://www.facebook.com/share/1B9HZ9ivTP/" target="_blank" rel="noopener"><span class="icon">👍</span><span class="label">Facebook</span><span class="arrow">›</span></a>
+  </section>
+
+  <footer>© Mira Lush</footer>
+</main>
+</body>
+</html>
